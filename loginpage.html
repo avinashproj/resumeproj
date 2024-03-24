@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        var n= "avinash";
+            var s= 123456;
+            
+            
+        function loginpage()
+        {
+            var i= document.from1.id.value;
+            var p= document.from1.pass.value;
+        
+            if ((i==n) && (p==s))
+            {  
+                window.location.assign("http://127.0.0.1:5500/resumeproj.html");
+                alert("soon!");
+                
+                    
+                
+                
+            }
+            else
+            {
+                alert("id or password are miss match");
+          }
+        }
+    </script>
+</head>
+<body>
+    <form name="from1" >
+        <label for="ID" >ID:     </label>
+        <input type="text"  name="id"><br><br>
+        <label for="PASSWORD">PASSWORD:</label>
+        <input type="password"  name="pass"><br><br>
+        <input type="submit" value="Submit"  onclick="loginpage()">
+      </form>
+</body>
+</html>
